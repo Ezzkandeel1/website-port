@@ -1,0 +1,123 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* Modern font */
+  background-color: #1e1e2f;
+  /* Dark theme */
+  color: #f0f0f0;
+  height: 100%;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Center the app */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Card for content styling */
+.card {
+  background-color: #2b2b3a;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border: 1px solid #3a3a4a;
+}
+
+/* Heading styles */
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Input field styling */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #3a3a4a;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #0099ff;
+  box-shadow: 0 0 5px #0099ff;
+}
+
+/* Button styles */
+button {
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #007BFF);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Error and success messages */
+.error-message {
+  color: #ff4c4c;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Placeholder style for inputs */
+input::placeholder {
+  color: #bfbfbf;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
